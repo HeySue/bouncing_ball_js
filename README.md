@@ -1,5 +1,7 @@
 This is my first JS project as a result of my JS learning from https://www.youtube.com/watch?v=3EMxBkqC4z0.
 
+I also find this quite helpful: https://www.youtube.com/watch?v=W6NZfCO5SIk
+
 # The bouncing ball game
 
 ## A brief record of the coding
