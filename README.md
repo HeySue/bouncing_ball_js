@@ -9,3 +9,17 @@ I also find this quite helpful: https://www.youtube.com/watch?v=W6NZfCO5SIk
 - Trying to move my code from CodeSandbox to local files.
 
 - Has coded the movable paddle and ball. No interactions between them yet.
+
+- Questions: 
+  - Q: In `index.html`, why is `#gameScreen` in `<head>` rather than `body`?
+  - A: In HTML, the `<style>` tag in `head` is used to define the style information for the website. It usually looks like:
+    ```
+    <style>
+    h1 {color:red;}
+    </style>
+    ``` 
+    to limit the scope of the style information to a single instance of `H1`, set the `id` attribute:
+    ```
+    #myid {border-width: 1; border: solid; text-align: center}
+    ```
+    See (https://www.w3.org/TR/html401/present/styles.html)
