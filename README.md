@@ -23,3 +23,7 @@ I also find this quite helpful: https://www.youtube.com/watch?v=W6NZfCO5SIk
     #myid {border-width: 1; border: solid; text-align: center}
     ```
     See (https://www.w3.org/TR/html401/present/styles.html)
+
+  - Q: **Uncaught SyntaxError: Cannot use import statement outside a module** for `import Paddle from "./paddle";`
+  - A: Probably because of ES6/Commonjs?
+
