@@ -25,5 +25,5 @@ I also find this quite helpful: https://www.youtube.com/watch?v=W6NZfCO5SIk
     See (https://www.w3.org/TR/html401/present/styles.html)
 
   - Q: **Uncaught SyntaxError: Cannot use import statement outside a module** for `import Paddle from "./paddle";`
-  - A: Probably because of ES6/Commonjs?
+  - A: In the index.html add `type = "module"` such that we have `<script type = "module" src="/src/index.js"></script>`
 
