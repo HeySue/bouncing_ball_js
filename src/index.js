@@ -1,6 +1,6 @@
 import Paddle from './paddle.js';
 import InputHandler from './input.js';
-// import csv form 'csv-parser';
+import Ball from './ball.js';
 
 let canvas = document.getElementById('gameScreen');
 let ctx = canvas.getContext("2d");
@@ -11,10 +11,13 @@ const GAME_HEIGHT = 600;
 let paddle = new Paddle(GAME_WIDTH, GAME_HEIGHT);
 paddle.draw(ctx);
 let inputHandler = new InputHandler(ctx, paddle);
+let ball = new Ball();
+
 function gameLoop(){
     ctx.clearRect(0,0, GAME_WIDTH, GAME_HEIGHT);
     paddle.update(ctx); 
     paddle.draw(ctx);
+    ball.draw(ctx);
     requestAnimationFrame(gameLoop);
 }
 
