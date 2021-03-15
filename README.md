@@ -32,3 +32,5 @@ I also find this quite helpful: https://www.youtube.com/watch?v=W6NZfCO5SIk
 - Paddle can move horizontally at the bottom of the canvas.
 - Paddle stop at the boundaries.
 - Can use keyboard arrows to control the movement of the paddle.
+- Add the ball, and it can bounce around the boundaries.
+- the canvas is at the middle of the webpage.
