@@ -11,13 +11,14 @@ const GAME_HEIGHT = 600;
 let paddle = new Paddle(GAME_WIDTH, GAME_HEIGHT);
 paddle.draw(ctx);
 let inputHandler = new InputHandler(ctx, paddle);
-let ball = new Ball();
+let ball = new Ball(GAME_WIDTH, GAME_HEIGHT);
 
 function gameLoop(){
     ctx.clearRect(0,0, GAME_WIDTH, GAME_HEIGHT);
     paddle.update(ctx); 
     paddle.draw(ctx);
     ball.draw(ctx);
+    ball.update(ctx);
     requestAnimationFrame(gameLoop);
 }
 
