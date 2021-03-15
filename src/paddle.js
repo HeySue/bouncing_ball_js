@@ -13,6 +13,12 @@ export default class Paddle{
         this.speed = -this.maxSpeed;
     }
 
+    draw(ctx){
+        ctx.fillStyle = "#ee8c86";
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+    }
+
+
     moveLeft(){
         this.speed = -this.maxSpeed;
     }
@@ -20,11 +26,10 @@ export default class Paddle{
     moveRight(){
         this.speed = this.maxSpeed;
     }
-    draw(ctx){
-        ctx.fillStyle = "#ee8c86";
-        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
-    }
 
+    stop(){
+        this.speed = 0;
+    }
     update(ctx){
         this.position.x += this.speed;
 
