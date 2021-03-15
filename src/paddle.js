@@ -13,10 +13,16 @@ export default class Paddle{
         this.speed = -this.maxSpeed;
     }
 
+    moveLeft(){
+        this.speed = -this.maxSpeed;
+    }
+
+    moveRight(){
+        this.speed = this.maxSpeed;
+    }
     draw(ctx){
         ctx.fillStyle = "#ee8c86";
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
-        // console.log('draw');
     }
 
     update(ctx){
@@ -26,9 +32,7 @@ export default class Paddle{
             this.position.x = 0;
         if (this.position.x > this.gameWidth - this.width) {
             this.position.x = this.gameWidth - this.width;
-            // this.speed = 0;
         }
-        // console.log(this.position.x);
     }
 
 }

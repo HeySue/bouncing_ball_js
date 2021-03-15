@@ -8,7 +8,7 @@ I also find this quite helpful: https://www.youtube.com/watch?v=W6NZfCO5SIk
 ### 2021.03.14
 - Trying to move my code from CodeSandbox to local files.
 
-- Has coded the movable paddle and ball. No interactions between them yet.
+- Has coded the movable paddle and ball. No interactions between them yet. (on codesandbox)
 
 - Questions: 
   - Q: In `index.html`, why is `#gameScreen` in `<head>` rather than `body`?
@@ -27,3 +27,8 @@ I also find this quite helpful: https://www.youtube.com/watch?v=W6NZfCO5SIk
   - Q: **Uncaught SyntaxError: Cannot use import statement outside a module** for `import Paddle from "./paddle";`
   - A: In the index.html add `type = "module"` such that we have `<script type = "module" src="/src/index.js"></script>`
 
+### 2021.03.15
+
+- Paddle can move horizontally at the bottom of the canvas.
+- Paddle stop at the boundaries.
+- Can use keyboard arrows to control the movement of the paddle.
